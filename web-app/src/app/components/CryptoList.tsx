@@ -33,7 +33,6 @@ export default function CryptoList({ cryptocurrencies }: CryptoListProps) {
 
   return (
     <div>
-      {/* View mode toggle (only on desktop) */}
       {!isMobile && (
         <div className="flex justify-end mb-4">
           <div className="inline-flex rounded-md shadow-sm" role="group">
@@ -63,7 +62,6 @@ export default function CryptoList({ cryptocurrencies }: CryptoListProps) {
         </div>
       )}
 
-      {/* Show appropriate view based on viewMode */}
       {viewMode === "table" ? (
         <CryptoTable cryptocurrencies={cryptocurrencies} />
       ) : (
@@ -74,7 +72,6 @@ export default function CryptoList({ cryptocurrencies }: CryptoListProps) {
         </div>
       )}
 
-      {/* Show message if no cryptocurrencies match search */}
       {cryptocurrencies.length === 0 && (
         <div className="text-center py-10">
           <p className="text-gray-500">

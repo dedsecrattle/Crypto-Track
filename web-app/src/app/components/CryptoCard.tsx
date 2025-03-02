@@ -1,7 +1,7 @@
 "use client";
 
 import { Cryptocurrency } from "../services/api";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 interface CryptoCardProps {
   crypto: Cryptocurrency;
@@ -20,9 +20,12 @@ export default function CryptoCard({ crypto }: CryptoCardProps) {
               <Image
                 src={crypto.image}
                 alt={crypto.name}
-                layout="fill"
-                objectFit="contain"
                 className="rounded-full"
+                fill
+                sizes="100vw"
+                style={{
+                  objectFit: "contain",
+                }}
               />
             </div>
             <div>
