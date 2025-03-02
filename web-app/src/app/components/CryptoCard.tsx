@@ -1,7 +1,7 @@
 "use client";
 
 import { Cryptocurrency } from "../services/api";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 interface CryptoCardProps {
   crypto: Cryptocurrency;
