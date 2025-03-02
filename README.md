@@ -11,6 +11,27 @@ A Next.js application that displays real-time cryptocurrency prices using the Co
 - Loading indicators and error handling
 - Automatic data refreshing
 
+## Documentation
+
+Documentation for this Project can be accessed through the following steps :-
+
+1. Navigate to `docs` directory
+   ```bash
+   cd docs
+   ```
+2. Install the dependencies
+   ```bash
+   npm install
+   #or
+   yarn install
+   ```
+3. Run the Document Server
+   ```bash
+   npm run start
+   ```
+
+Open [http://localhost:4000](http://localhost:4000) in your browser to see documentation.
+
 ## Tech Stack
 
 - **Next.js 14**: React framework with App Router
